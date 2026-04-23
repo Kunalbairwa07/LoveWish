@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="A romantic birthday surprise for Khushi ❤️" />
+<title>Happy Birthday Khushi ❤️</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ LANDING / TAP TO OPEN ============ -->
+<section id="landing" class="landing">
+  <div class="landing-hearts" aria-hidden="true"></div>
+  <div class="landing-content">
+    <h2 class="landing-title">A Surprise Awaits You...</h2>
+    <p class="landing-sub">Made with endless love, just for you 💖</p>
+    <button id="openBtn" class="open-btn">
+      Tap to Open Surprise <span class="heart-pulse">❤️</span>
+    </button>
+  </div>
+</section>
+
+<!-- ============ MAIN SITE ============ -->
+<main id="mainSite" class="main-site hidden">
+
+  <!-- Floating background layers -->
+  <div class="balloons" aria-hidden="true"></div>
+  <div class="petals" aria-hidden="true"></div>
+  <div class="particles" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="hero-title">
+      <span id="typedText"></span><span class="cursor">|</span>
+    </h1>
+    <p class="hero-sub fade-in-delay">
+      Every heartbeat of mine whispers your name, Khushi 💕
+    </p>
+  </section>
+
+  <!-- LOVE COUNTER -->
+  <section class="counter-section">
+    <h2 class="section-title">Loving You Since 💖</h2>
+    <p class="counter-sub">November 1, 2020</p>
+    <div class="counter" id="counter">
+      <div class="time-box"><span id="days">0</span><small>Days</small></div>
+      <div class="time-box"><span id="hours">0</span><small>Hours</small></div>
+      <div class="time-box"><span id="minutes">0</span><small>Minutes</small></div>
+      <div class="time-box"><span id="seconds">0</span><small>Seconds</small></div>
+    </div>
+  </section>
+
+  <!-- SPECIAL MESSAGE -->
+  <section class="message-section">
+    <button id="messageBtn" class="message-btn">Special Message for You 💌</button>
+  </section>
+
+  <!-- MEMORIES -->
+  <section class="memories">
+    <h2 class="section-title">Our Beautiful Memories 📸</h2>
+    <p class="memories-sub">Every moment with you is a treasure</p>
+    <div class="gallery">
+      <!-- 👇 Replace src with your own photos in assets/images/ -->
+      <div class="photo"><img src="assets/images/Photo1.jpeg" alt="Memory 1" onerror="this.src='https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=600'"><div class="overlay">❤️</div></div>
+      <div class="photo"><img src="assets/images/Photo2.jpeg" alt="Memory 2" onerror="this.src='https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600'"><div class="overlay">❤️</div></div>
+      <div class="photo"><img src="assets/images/Photo3.jpeg" alt="Memory 3" onerror="this.src='https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600'"><div class="overlay">❤️</div></div>
+      <div class="photo"><img src="assets/images/Photo4.jpeg" alt="Memory 4" onerror="this.src='https://images.unsplash.com/photo-1507290439931-a861b5a38200?w=600'"><div class="overlay">❤️</div></div>
+      <div class="photo"><img src="assets/images/Photo5.jpeg" alt="Memory 5" onerror="this.src='https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=600'"><div class="overlay">❤️</div></div>
+      <div class="photo"><img src="assets/images/photo6.jpg" alt="Memory 6" onerror="this.src='https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?w=600'"><div class="overlay">❤️</div></div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final">
+    <div class="glow-heart">❤️</div>
+    <h2 class="final-text">You are my life, my happiness,<br/>my everything ❤️</h2>
+    <p class="signature">— Forever yours</p>
+  </section>
+</main>
+
+<!-- ============ MODAL: SPECIAL MESSAGE ============ -->
+<div id="messageModal" class="modal">
+  <div class="modal-content">
+    <button id="closeModal" class="close-btn" aria-label="Close">×</button>
+    <h2 class="modal-title">My Love Letter to You 💌</h2>
+    <div class="letter">
+      <p>My dearest Khushi,</p>
+      <p>
+        From the very first day you walked into my life, everything around me
+        started to feel brighter, softer, and more meaningful. You didn’t just
+        become a part of my world — you became my world.
+      </p>
+      <p>
+        On your birthday, I want you to know that every smile of yours is the
+        reason behind mine. Every laugh we share, every silly fight, every late
+        night talk, every "I love you" — it all matters more than you can ever
+        imagine.
+      </p>
+      <p>
+        You are the calm in my chaos, the home my heart was searching for. You
+        are my favourite hello and my hardest goodbye. With you, even the most
+        ordinary days feel magical.
+      </p>
+      <p>
+        Thank you for loving me, for understanding me, and for choosing me
+        every single day. I promise to hold your hand through every storm and
+        dance with you through every sunshine.
+      </p>
+      <p>
+        Happy Birthday, my love. May this year bring you everything your beautiful
+        heart desires — and I promise, I’ll be right beside you for all of it.
+      </p>
+      <p class="sign">Forever &amp; always yours,<br/>❤️</p>
+    </div>
+  </div>
+</div>
+
+<!-- Background music -->
+<audio id="bgMusic" loop>
+  <!-- 👇 Replace with your own romantic mp3 in assets/music/ -->
+  <source src="assets/music/Birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
