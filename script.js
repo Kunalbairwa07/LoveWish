@@ -38,7 +38,7 @@ function startTyping() {
 }
 
 // ---------- Live Love Counter ----------
-const startDate = new Date("2020-11-01T00:00:00").getTime();
+const startDate = new Date("2000-01-01T00:00:00").getTime();
 
 function updateCounter() {
   const now  = Date.now();
